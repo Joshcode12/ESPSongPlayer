@@ -1,0 +1,92 @@
+menu "Hardware Configuration"
+    config SDA_I2C
+        int "SDA GPIO Number"
+        default 0
+        help 
+            Set the GPIO number where the I2C SDA is connected
+    
+    config SCL_I2C
+        int "SCL GPIO Number"
+        default 1
+        help 
+            Set the GPIO number where the I2C SCL is connected
+
+    config SD_CS_GPIO
+        int "SD CS GPIO Number"
+        default 4
+        help 
+            Set the GPIO number where the sd-card chip select is connected
+
+    config X_CS_GPIO
+        int "X CS GPIO Number"
+        default 5
+        help 
+            Set the GPIO number where the vs1053b command chip select is connected
+
+    config XD_CS_GPIO
+        int "XD CS GPIO Number"
+        default 6
+        help 
+            Set the GPIO number where the vs1053b data chip select is connected
+
+    config DREQ_GPIO
+        int "DREQ GPIO Number"
+        default 7
+        help 
+            Set the GPIO number where the vs1053b data request pin is connected
+
+    config RGB_GPIO
+        int "RGP GPIO Number"
+        default 8
+        help 
+            Set the GPIO number where the addressable RGB LED is connected
+            
+    config PREV_GPIO
+        int "PREV BTN GPIO Number"
+        default 10
+        help 
+            Set the GPIO number where the previous button is connected
+    
+    config NEXT_GPIO
+        int "NEXT BTN GPIO Number"
+        default 11
+        help 
+            Set the GPIO number where the next button is connected
+
+    config PLAY_PAUSE_GPIO
+        int "PLAY PAUSE BTN GPIO Number"
+        default 18
+        help 
+            Set the GPIO number where the play pause button is connected 
+
+    config CLK_SPI
+        int "CLK BTN GPIO Number"
+        default 19
+        help 
+            Set the GPIO number where the spi clock is connected
+
+    config MOSI_SPI
+        int "MOSI BTN GPIO Number"
+        default 20
+        help 
+            Set the GPIO number where the spi MOSI is connected
+
+    config MISO_SPI
+        int "MISO BTN GPIO Number"
+        default 21
+        help 
+            Set the GPIO number where the spi MISO is connected
+
+    config ENC_A_PCNT
+        int "ENC A GPIO Number"
+        default 22
+        help 
+            Set the GPIO number where the encoder a is connected
+
+    config ENC_B_PCNT
+        int "ENC B GPIO Number"
+        default 23
+        help 
+            Set the GPIO number where the encoder B is connected
+
+endmenu
